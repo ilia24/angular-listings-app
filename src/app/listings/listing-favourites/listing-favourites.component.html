@@ -1,5 +1,10 @@
 <div class=favourites-modal>
-  <p>Favourites</p>
-  
+  <h4> Favourites </h4>
+  <p *ngIf="favouriteListings.length === 0">No favourites chosen!</p> 
   <app-listing-item *ngFor="let listingElement of favouriteListings" [listing]='listingElement'></app-listing-item>
+
 </div>
+
+
+
+
