@@ -1,3 +1,11 @@
-<p>
-  header works!
-</p>
+<nav class="navbar  navbar-dark fixed-top">
+  <a class="navbar-brand" href="#"> <span class="house-accent">⌂</span> HouseMaster </a>
+  
+  <form class="form-inline pull-right" (ngSubmit)="submitSearch(form)" #form='ngForm'>
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name='searchInput' ngModel>
+    <button  class="search-button btn btn-outline-light my-2 my-sm-0" type="submit" >Search</button>
+  </form>
+  
+</nav>
+
+<div class="nav-height-offset"></div>
