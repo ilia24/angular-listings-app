@@ -7,7 +7,6 @@ import { ListingService } from './listings/listing.service'
   styleUrls: ['./app.component.scss'],
   providers: [ListingService]
 })
-
 export class AppComponent{
 
 }

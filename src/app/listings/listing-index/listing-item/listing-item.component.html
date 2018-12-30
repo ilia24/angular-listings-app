@@ -1,3 +1,7 @@
-<p>
-  listing-item works!
-</p>
+<div class="card" (click)="selectListing()">
+  <img class="card-img-top" [src]="listing.pictureUrl" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{listing.name}}</h5>
+    <p class="card-address"> Toronto </p>
+  </div>
+</div>
