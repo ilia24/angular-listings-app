@@ -35,6 +35,8 @@ export class ListingService {
     this.searchExecuted.emit(foundListings)
   }
 
+  // TO-DO: cut out favourites into its own generic service. this can be reused
+  // and ensure duplicate ID's cant be put into fav's
   getFavourites(){
     let storedListings = localStorage.getItem('listings')
     if (!storedListings) return;
