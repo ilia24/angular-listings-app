@@ -1,0 +1,68 @@
+.details-modal{
+  position: fixed;
+  width: 100%;
+  height: 94%;
+  z-index: 100;
+  top: 56px;
+  display: none;
+  .modal-elem{
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+  }
+  .page-block {
+    background-color: #58585882;
+    width: 55%;
+  }
+}
+
+.showModal {
+  display: inherit !important;
+}
+
+.listing-details {
+  width: 45%;
+  background-color: white;
+  border-right: 5px solid #A5BE00;
+}
+
+.container {
+  max-width: 85%;
+  position: relative;
+  padding: 0px;
+}
+.close-button {
+  position: absolute;
+  right: 2%;
+  top: 8px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.listing-name {
+  font-size: 30px;
+  margin: 30px 0px 0px;
+  text-align: left;
+}
+
+.listing-price {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  background-color: #427AA1;
+  color: white;
+  padding: 9px;
+  font-weight: 100;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+
+.sub-details {
+  text-align: left;
+  margin-top: 20px;
+}

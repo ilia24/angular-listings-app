@@ -1,3 +1,21 @@
-<p>
-  listing-details works!
-</p>
+<div class="details-modal" *ngIf="modalOpen" [ngClass]="{showModal: modalOpen}">
+  <div class="modal-elem listing-details">
+    <span class="close-button" (click)="closeListing()">✕</span>
+    <div class="container">
+
+      <div class="main-details">
+        <p class="listing-name">{{listing.name}}</p>
+        <p class="listing-price">$1,000,000</p>
+        <img [src]="listing.pictureUrl" alt="">
+      </div>
+
+      <div class="sub-details">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="modal-elem page-block" (click)="closeListing()"></div>  
+</div>
+
+
