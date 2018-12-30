@@ -1,5 +1,7 @@
 <div class="card" (click)="selectListing()">
   <img class="card-img-top" [src]="listing.pictureUrl" alt="Card image cap">
+  <span class='listing-favourite fav-add' (click)="addFavourite($event)">♥</span>
+  <span class='listing-favourite fav-remove' (click)="removeFavourite($event)">✘</span>
   <div class="card-body">
     <h5 class="card-title">{{listing.name}}</h5>
     <p class="card-address"> Toronto </p>

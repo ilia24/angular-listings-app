@@ -8,6 +8,7 @@ import { ListingDetailsComponent } from './listings/listing-details/listing-deta
 import { ListingIndexComponent } from './listings/listing-index/listing-index.component';
 import { ListingItemComponent } from './listings/listing-index/listing-item/listing-item.component';
 import { HeaderComponent } from './header/header.component';
+import { ListingFavouritesComponent } from './listings/listing-favourites/listing-favourites.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     ListingDetailsComponent,
     ListingIndexComponent,
     ListingItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListingFavouritesComponent
   ],
   imports: [
     BrowserModule,

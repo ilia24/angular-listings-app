@@ -11,6 +11,7 @@ import { ListingService } from '../listing.service'
 export class ListingDetailsComponent implements OnInit {
   modalOpen: boolean = false
   listing: Listing;
+  
   constructor(private listingService: ListingService){}
 
   // this lets us completely encapsulate the open/close logic within the

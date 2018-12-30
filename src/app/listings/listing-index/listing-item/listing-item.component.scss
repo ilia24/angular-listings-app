@@ -4,6 +4,7 @@
   margin: 0% 1% 1% 0%;
   text-align: center;
   cursor: pointer;
+  position: relative;
   .card-img-top {
     width: 100%;
     height: 150px;
@@ -13,6 +14,47 @@
     margin-bottom: 0px;
     color: #05668D;
   }
+  .listing-favourite {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 30px;
+    color: #e2193c;
+  }
+  .fav-remove {
+    display: none;
+  }
 }
 
+.favourited {
+  width: 95% !important;
+}
 
+:host-context(.favourites-modal) .card {
+  width: 90%;
+  .card-img-top {
+    height: 85px;
+  }
+  .card-title {
+    font-size: 13px;
+  }
+  .card-address {
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
+  .card-body {
+    padding: 8px 0px 0px;
+  }
+
+  .fav-add {
+    display: none;
+  }
+
+  .fav-remove {
+    display: inherit;
+    right: 5px;
+    top: 1px;
+    line-height: 30px;
+    color: #d02241;
+  }
+}
