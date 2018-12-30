@@ -7,6 +7,7 @@ import {Listing} from './listing.model'
 
 export class ListingService {
   listingSelected = new EventEmitter<Listing>();
+  searchExecuted = new EventEmitter<Listing[]>();
 
   private listings: Listing[] = [
     new Listing('33 Yorkville Ave', 'https://pmcvariety.files.wordpress.com/2018/07/bradybunchhouse_sc11.jpg?w=1000&h=563&crop=1'),
@@ -28,7 +29,9 @@ export class ListingService {
     return this.listings.slice()
   }
 
-  searchListings(input){
-    
+  executeSearch(input){
+    const query = new RegExp(`${input}`, 'gi');
+    const foundListings = this.listings.filter(({name}) => name.match(query));
+    this.searchExecuted.emit(foundListings)
   }
 }

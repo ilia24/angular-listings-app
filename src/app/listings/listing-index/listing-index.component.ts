@@ -13,6 +13,12 @@ export class ListingIndexComponent implements OnInit {
 
   ngOnInit() {
     this.listings = this.listingService.getListings()
+
+    this.listingService.searchExecuted.subscribe(
+      (listings: Listing[]) => {
+        this.listings = listings
+      }
+    )
   }
 
 }
