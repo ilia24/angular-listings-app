@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ListingService} from '../listing.service'
-import {Listing} from '../listing.model'
+
+import { ListingService } from '../listing.service'
+import { Listing } from '../listing.model'
 
 @Component({
   selector: 'app-listing-index',
@@ -9,6 +10,7 @@ import {Listing} from '../listing.model'
 })
 export class ListingIndexComponent implements OnInit {
   listings: Listing[];
+  
   constructor(private listingService: ListingService) { }
 
   ngOnInit() {

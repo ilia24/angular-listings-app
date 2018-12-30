@@ -1,5 +1,6 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import {Listing} from './listing.model'
+
+import { Listing } from './listing.model'
 
 @Injectable({
   providedIn: 'root'
@@ -22,8 +23,6 @@ export class ListingService {
     new Listing('33 Yorkville Ave', 'https://pmcvariety.files.wordpress.com/2018/07/bradybunchhouse_sc11.jpg?w=1000&h=563&crop=1'),
     new Listing('23 Davenport Road','https://cdn.houseplans.com/product/q5qkhirat4bcjrr4rpg9fk3q94/w800x533.jpg?v=8')
   ]
-
-  constructor() { }
 
   getListings() {
     return this.listings.slice()

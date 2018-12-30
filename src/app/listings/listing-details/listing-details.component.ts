@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Listing} from '../listing.model'
-import {ListingService} from '../listing.service'
+
+import { Listing } from '../listing.model'
+import { ListingService } from '../listing.service'
 
 @Component({
   selector: 'listing-details-modal',
@@ -8,10 +9,9 @@ import {ListingService} from '../listing.service'
   styleUrls: ['./listing-details.component.scss']
 })
 export class ListingDetailsComponent implements OnInit {
-  constructor(private listingService: ListingService){}
   modalOpen: boolean = false
   listing: Listing;
-
+  constructor(private listingService: ListingService){}
 
   // this lets us completely encapsulate the open/close logic within the
   // component/service relationship
